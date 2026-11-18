@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Tab - BBOSAK2143 Eye-Saver</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #00d200;
+    background-image: linear-gradient(to bottom, #002929 0%, #006f6f 50%, #001d1d 100%);
+  }
+  .panel {
+    width: 90%;
+    max-width: 620px;
+    padding: 36px;
+    border: 2px solid #840000;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #001e1e 0%, #005151 50%, #001e1e 100%);
+    text-align: center;
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #840000;
+    border-radius: 20px;
+    background: #002727;
+    color: #df7000;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 42px;
+    color: #0cffff;
+    margin-bottom: 6px;
+    text-shadow: 0 2px #002727;
+  }
+  p {
+    color: #00b200;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  input {
+    flex: 1;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #df7000;
+    background-image: linear-gradient(to bottom, #005151 0%, #002828 50%, #006f6f 100%);
+    border: 1px solid #840000;
+    border-radius: 8px;
+    outline: none;
+  }
+  input::placeholder { color: #a75400; }
+  input:focus { border-color: #00e3e3; color: #0cffff; }
+  button {
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0cffff;
+    background-image: linear-gradient(to bottom, #001500 0%, rgba(0, 210, 0, 0.5) 50%, #001500 100%);
+    border: 1px solid #00e3e3;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover {
+    color: #00b2b2;
+    background-image: linear-gradient(to bottom, #160b00 0%, rgba(223, 112, 0, 0.5) 50%, #160b00 100%);
+    border-color: #df7000;
+  }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="badge">BBOSAK2143 • Zero Black &amp; White</div>
+    <h1 id="clock">00:00</h1>
+    <p>Easy-on-the-eyes browsing mode active</p>
+    <form action="https://duckduckgo.com" method="GET">
+      <input type="text" name="q" placeholder="Search the web without eye strain..." autofocus>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById("clock").textContent = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>

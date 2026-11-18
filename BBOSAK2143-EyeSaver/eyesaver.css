@@ -1,0 +1,95 @@
+/* BBOSAK2143 Zero Black & White Global Engine */
+html.bbosak-active,
+html.bbosak-active body {
+  background-color: #003030 !important;
+  color: #00b200 !important;
+}
+
+html.bbosak-active *:not(img):not(video):not(canvas):not(svg):not(picture):not([style*="background-image"]) {
+  background-color: #003030 !important;
+  color: #00b200 !important;
+  border-color: #840000 !important;
+  box-shadow: none !important;
+}
+
+html.bbosak-active header,
+html.bbosak-active nav,
+html.bbosak-active aside,
+html.bbosak-active footer,
+html.bbosak-active [role="banner"],
+html.bbosak-active [role="navigation"] {
+  background-color: #002727 !important;
+}
+
+html.bbosak-active h1,
+html.bbosak-active h2,
+html.bbosak-active h3,
+html.bbosak-active h4,
+html.bbosak-active h5,
+html.bbosak-active h6,
+html.bbosak-active strong,
+html.bbosak-active b {
+  color: #00d200 !important;
+}
+
+html.bbosak-active a,
+html.bbosak-active a * {
+  color: #00e3e3 !important;
+}
+
+html.bbosak-active a:visited,
+html.bbosak-active a:visited * {
+  color: #b2b200 !important;
+}
+
+html.bbosak-active a:hover,
+html.bbosak-active a:hover * {
+  color: #0cffff !important;
+}
+
+html.bbosak-active input,
+html.bbosak-active textarea,
+html.bbosak-active select,
+html.bbosak-active button,
+html.bbosak-active [role="button"] {
+  background-color: #002727 !important;
+  color: #df7000 !important;
+  border: 1px solid #840000 !important;
+}
+
+html.bbosak-active input::placeholder,
+html.bbosak-active textarea::placeholder {
+  color: #a75400 !important;
+}
+
+html.bbosak-active code,
+html.bbosak-active pre {
+  background-color: #002020 !important;
+  color: #00d200 !important;
+  border: 1px solid #006565 !important;
+}
+
+/* BBOSAK2143 Custom Scrollbars */
+html.bbosak-active::-webkit-scrollbar,
+html.bbosak-active *::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+html.bbosak-active::-webkit-scrollbar-track,
+html.bbosak-active *::-webkit-scrollbar-track {
+  background: linear-gradient(to right, #006060 0%, #002d2d 50%, #004c4c 100%) !important;
+}
+
+html.bbosak-active::-webkit-scrollbar-thumb,
+html.bbosak-active *::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #2e0000 0%, #840000 50%, #2e0000 100%) !important;
+  border: 2px solid #df7000 !important;
+  border-radius: 10px !important;
+}
+
+html.bbosak-active::-webkit-scrollbar-thumb:hover,
+html.bbosak-active *::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #432200 0%, #df7000 50%, #432200 100%) !important;
+  border-color: #00e3e3 !important;
+}
